@@ -1,14 +1,25 @@
+package demo
+
 /**
  * A cliche of a program, written only for these KDoc bits.
  *
- * A detailed description goes here.
+ * @property name The name of the person to be greeted.
  */
-class HelloDokka {
-  companion object {
-    @JvmStatic
-    fun main(vararg args: String) {
-      println("Hello, Dokka!")
-    }
+class Greeter(val name: String) {
+  /**
+   * Performs the greet work.
+   */
+  fun greet() {
+    println("Hello, $name!")
   }
+}
+
+/**
+ * The main function.
+ *
+ * @param args Not used in this implementation.
+ */
+fun main(vararg args: String) {
+  Greeter("Dokka").greet()
 }
 

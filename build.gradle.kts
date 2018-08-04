@@ -11,7 +11,7 @@ plugins {
 }
 
 application {
-  mainClassName = "HelloDokka"
+  mainClassName = "demo.HelloDokkaKt"
 }
 
 dependencies {
@@ -22,12 +22,12 @@ repositories {
   jcenter()
 }
 
-defaultTasks("run")
-
 val dokka by tasks.getting(DokkaTask::class) {
-  outputFormat = "html"
+  outputFormat = "javadoc"
   outputDirectory = "$buildDir/javadoc"
   jdkVersion = 8
   reportUndocumented = true
 }
+
+defaultTasks("dokka")
 
