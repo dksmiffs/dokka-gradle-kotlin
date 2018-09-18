@@ -5,7 +5,7 @@ This project demonstrates basic [Dokka] usage for [Kotlin] with [Gradle]'s Kotli
 ## Usage
 
 1. [Install Gradle].
-2. From bash on Linux, or PowerShell or Git Bash on Windows, type `.\gradlew` from the top level of this project.
+2. From bash on Linux, or PowerShell or Git Bash on Windows, type `./gradlew` from the top level of this project.
 3. Explore your local `./build/dokka` directory for output results.
 
 [ci-badge]: https://travis-ci.org/dksmiffs/dokka-gradle-kotlin.svg "Travis CI build status"
