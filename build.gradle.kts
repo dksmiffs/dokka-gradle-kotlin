@@ -7,7 +7,7 @@ import org.jetbrains.dokka.gradle.DokkaTask
 plugins {
   application
   id("org.jetbrains.dokka") version "0.9.17"
-  kotlin("jvm") version "1.2.70"
+  kotlin("jvm") version "1.3.11"
 }
 
 application {
